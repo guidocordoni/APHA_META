@@ -14,5 +14,5 @@ What this pipeline will do?
 The script intentionally stops here leaving you the possibilty to use the results for further metagenomic or comparative genomics analysis.
 
 It's suggested to use at least a 16 cores machine with 128GB memory. It will not stop running if you are using a 4 core machine but it can take a very long time to get the results.
-REMEMBER TO CHANGE THE NUMBER OF THREADS VALUE ACCORDING TO YOUR CORE AVAILABILITY (default is set to 4 cores)
+REMEMBER TO CHANGE THE NUMBER OF THREADS VALUE ACCORDING TO YOUR CORE AVAILABILITY (default is set to 16 cores)
 
