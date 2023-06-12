@@ -59,7 +59,7 @@ if proceed == "Y" or proceed == "y":
         BASE = os.path.basename(f)
         SAMPLE = BASE[:-16]  # Remove the "_1.fq" extension
         os.system(
-            f'fastp -i "RAW_READS/{f}" -o "CLEAN_READS/{SAMPLE}_1.fq" -I "RAW_READS/{R}" -O "CLEAN_READS/{SAMPLE}_2.fq" -w 4 -V -j "READ_QC/{SAMPLE}.json" -h "READ_QC/{SAMPLE}.html"'
+            f'fastp -i "RAW_READS/{f}" -o "CLEAN_READS/{SAMPLE}_1.fq" -I "RAW_READS/{R}" -O "CLEAN_READS/{SAMPLE}_2.fq" -w 16 -V -j "READ_QC/{SAMPLE}.json" -h "READ_QC/{SAMPLE}.html"'
         )
 
     with ThreadPoolExecutor() as executor:
@@ -83,7 +83,7 @@ if proceed == "Y" or proceed == "y":
 
         os.system(f"megahit -1 {f} -2 {R} -t 16 -o {assembly_output_dir} -f")
         os.system(
-            f'kraken2 --db /home/guidocordoni/fsx/ranch-44/Bactipipes/BactiPipes_SCE3/Programs/Kraken2/standard_db_2021-05-17 --threads 4 --memory-mapping --use-names --output {KRAKEN_report_path} "{assembly_output_dir}/final.contigs.fa"'
+            f'kraken2 --db /home/guidocordoni/fsx/ranch-44/Bactipipes/BactiPipes_SCE3/Programs/Kraken2/standard_db_2021-05-17 --threads 16 --memory-mapping --use-names --output {KRAKEN_report_path} "{assembly_output_dir}/final.contigs.fa"'
         )
 
     with ThreadPoolExecutor() as executor:
