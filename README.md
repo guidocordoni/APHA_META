@@ -1,5 +1,6 @@
 # APHA_META
 Metagenomic analysis of Illumina sequences.
+
 1) Use the apha_met_gc_mamba_installer.sh to install all software needed by the pypeline to run
 2) activate apha_meta mamba environment.
 3) create a folder called RAW_READS and copy all your metagenomic sequences there.
@@ -16,3 +17,6 @@ The script intentionally stops here leaving you the possibilty to use the result
 It's suggested to use at least a 16 cores machine with 128GB memory. It will not stop running if you are using a 4 core machine but it can take a very long time to get the results.
 REMEMBER TO CHANGE THE NUMBER OF THREADS VALUE ACCORDING TO YOUR CORE AVAILABILITY (default is set to 16 cores)
 
+SCRIPT UNDER DEVELOPMENT
+KNOWN ISSUES:
+1) Krona graphs are not taxonomically organised leading to an over fitted Krona graph.
