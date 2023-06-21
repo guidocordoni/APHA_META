@@ -1,4 +1,4 @@
-# APHA_META
+# APHA_META V.1.3
 Metagenomic analysis of Illumina sequences.
 
 1) Use the apha_met_gc_mamba_installer.sh to install all software needed by the pypeline to run
@@ -19,4 +19,4 @@ REMEMBER TO CHANGE THE NUMBER OF THREADS VALUE ACCORDING TO YOUR CORE AVAILABILI
 
 SCRIPT UNDER DEVELOPMENT
 KNOWN ISSUES:
-1) Krona graphs are not taxonomically organised leading to an over fitted Krona graph.
+No known issue
