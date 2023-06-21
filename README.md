@@ -4,7 +4,7 @@ Metagenomic analysis of Illumina sequences.
 1) Use the apha_met_gc_mamba_installer.sh to install all software needed by the pypeline to run
 2) activate apha_meta mamba environment.
 3) create a folder called RAW_READS and copy all your metagenomic sequences there.
-4) Copy the APHA_META_GC_V1.2_working.py file in the folder that contains the folder RAW_READS thay tou have just created and run it (python APHA_META_GC_V1.2_working.py)
+4) Copy the APHA_META_GC_V1.3MT.py file in the folder that contains the folder RAW_READS thay tou have just created and run it (python APHA_META_GC_V1.2_working.py)
 
 What this pipeline will do?
 1) Cleans the sequences using fastP 
@@ -20,3 +20,6 @@ REMEMBER TO CHANGE THE NUMBER OF THREADS VALUE ACCORDING TO YOUR CORE AVAILABILI
 SCRIPT UNDER DEVELOPMENT
 KNOWN ISSUES:
 No known issue
+# INSTALLATION
+Prerequisites: Mamba
+run the script apha_met_gc_mamba_installer (./apha_met_gc_mamba_installer). This will install a mamba environment apha_meta and will install python 3.6 and all the software and dependencies needed for the pipeline to work). Done.
