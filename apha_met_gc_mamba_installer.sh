@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Made by Guido Cordoni guido.cordoni@apha.gov.uk
 # Create conda environment
 mamba create -n apha_meta python=3.6
 
