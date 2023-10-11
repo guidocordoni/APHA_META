@@ -9,7 +9,7 @@ import subprocess
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 # Made by Guido Cordoni guido.cordoni@apha.gov.uk
-graphic = pyfiglet.figlet_format("APHA META GC V 1 . 2")
+graphic = pyfiglet.figlet_format("APHA META GC V 1 . 3 MT")
 print(graphic)
 print("APHA_META_GC is a pipeline to work on metagenomic sequences. This version can handle Illumina generated sequences and can detect viruses and bacteria.\n\nBefore starting you MUST create a folder called RAW_READS and put the sequences that you want to analyze there.\n\nThe pipeline will perform sequences cleaning and quality check using fastp, metagenomic assembly using megahit, Kraken 2 to assess the taxonomy of the organisms present in your samples.\n\nThe last part of this pipeline will bin the contigs obtained with megahit according to Kraken2 taxonomy found (each file will be named according to the taxonomy.\n\nIt's a long process (depending on how many sequences you have can go from hours to days), please be patient and let the computer work for you.\n\nThis pipeline intentionally stops after the binning to give you the possibility to choose what to do with the data generated (i.e. abundance stats, comparative genomics of some selected groups, intra/cross-domain associations). \n\nBefore starting, install the necessary mamba environment using the bash script apha_met_gc_mamba_installer.sh provided. ***REMEMBER TO COPY THIS SCRIPT IN THE FOLDER WHERE YOU HAVE CREATED YOUR RAW_READS FOLDER***\n\n")
 
